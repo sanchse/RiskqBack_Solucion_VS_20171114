@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaPrincipal.master.cs" Inherits="ESRIAQWeb.PaginaPrincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <link href="css/tooltip.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link href="css/formulario.css" rel="stylesheet" />
+    
+     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form2" runat="server"> 
+      
+  <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnableScriptGlobalization="true" EnableScriptLocalization="true"  >
+   
+    <%--<Scripts>
+            <asp:ScriptReference: Path="/js/MisOperaciones.js"/>
+    </Scripts>
+    <Services> 
+            <asp:ServiceReference: Path="/ESRIAQWebServices.asmx"/>
+    </Services>--%>
+   
+
+  </asp:ScriptManager>
+ 
+    
+
+
+
+<div id="container_pagina">
+
+    <div id="cabecera">
+				<table id="menu_insht_superior" border:"0"  cellpadding:"0" cellspacing:"0"  width:"972">
+                   <tr>
+                       <td width="4" valign="top">
+                            <a href="www.mtin.es/index.html">
+                                    <IMG  src="../img/logo_mtin.gif" alt="Logo" border=0 />
+                            </a>
+                       </td>
+                       <td valign="top"  >
+                            <a href="www.insht.es/index.html">
+                                <IMG  src="../img/logo_insht.gif" alt="Logo" border=0 />
+                            </a>
+                       </td>
+                   </tr>
+		           <tr>
+                      <td valign="top" colspan="2">
+                            <table width="972" border="0" id="navegador_insht">
+                                <tr>
+                                    <td width="22"><IMG  src="../img/ico_calc.gif" alt="Logo" border=0 /></td>
+                                    <td width="182"><a class="Link_Frame_Superior_Institut" href="../../../calculadores.insht.es_86/index.html" >Calculadores INSHT</a></td>
+                                    
+                                    <td width="22"><IMG  src="../img/ico_home.gif" alt="Logo" border=0 /></td>
+                                    <td class="Link_Frame_Superior_Institut">> <a class="Link_Frame_Superior_Institut" href="index.html">Exposición a agentes químicos. Evaluación cualitativa del riesgo por inhalación de agentes químicos.</a></td>
+                                    
+                                    <td width="22"><IMG  src="../img/ico_volver.gif" alt="Logo" border=0 /></td>
+                                    <td width="130"><a class="Link_Frame_Superior_Institut" href="../../../calculadores.insht.es_86/index.html">Volver a calculadores</a></td>
+                                </tr>
+                            </table>
+                      </td>
+                   </tr>
+
+                </table>
+           		
+                <div id="titol_aplicacio">
+                <div style="margin-top:3px; margin-bottom:3px;">Exposición a agentes químicos. Evaluación cualitativa del riesgo por inhalacion de agentes químicos.</div>
+                </div>
+       
+            
+       </div>
+
+    <div id="cuerpo_pagina">
+		<!--CB-->
+                <div id="menu_insht_lateral">
+                	<a href="PaginaIntroduccion.aspx" class="selected">Introducción</a> 
+                    <a href="PaginaMisOperaciones.aspx"> Entrada de datos: Operaciones</a> 
+                    <a target="_blank" href="PaginaRecursosAdicionales.aspx"  >Recursos adicionales</a>
+                    
+                     <br />
+
+                   
+                    	<a  href="../usuarios/login8180.html?aplicacion=CB"  >Acceso con Mi identificador</a> 
+					
+                </div>
+
+           
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+               
+
+    
+	</div>
+
+	
+  
+    <div id="pie_pagina" >
+	<p>
+    © INSHT (Instituto Nacional de Seguridad e Higiene en el Trabajo) | <a  style="color:#7E9491;" target="_blank" href='../../../www.insht.es/portal/site/Insht/menuitem.1f1a3bc79ab34c578c2e8884060961ca/index629b.html?vgnextoid=42387639e8b14110VgnVCM100000dc0ca8c0RCRD&amp;vgnextchannel=25d44a7f8a651110VgnVCM100000dc0ca8c0RCRD'>Aviso legal</a>
+	</p>
+    </div>
+
+</div>
+
+</form>
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

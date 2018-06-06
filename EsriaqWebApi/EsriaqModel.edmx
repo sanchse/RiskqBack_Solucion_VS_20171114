@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="riskquimModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="rq_operaciones">
+          <Key>
+            <PropertyRef Name="ID_Operacion" />
+          </Key>
+          <Property Name="ID_Operacion" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_Usuario" Type="bigint" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="300" />
+          <Property Name="agentequimicooperacion" Type="varchar" MaxLength="300" />
+          <Property Name="descripcion" Type="text" />
+          <Property Name="seleccionfrasesH" Type="smallint" />
+          <Property Name="noaplicafrasesHcheck" Type="smallint" />
+          <Property Name="seleccionVLAED" Type="smallint" />
+          <Property Name="seleccionVLAEDmatpar" Type="smallint" />
+          <Property Name="seleccionVLAEDparticulada" Type="smallint" />
+          <Property Name="seleccionVLAEDnoparticulada" Type="smallint" />
+          <Property Name="seleccionsustanciacomercialsino" Type="smallint" />
+          <Property Name="seleccionmaterialesnosujetosanormativa" Type="smallint" />
+          <Property Name="frasesHseleccionadas" Type="longtext" />
+          <Property Name="clasepeligro" Type="smallint" />
+          <Property Name="seleccioncantidaddia" Type="smallint" />
+          <Property Name="clasecantidaddia" Type="smallint" />
+          <Property Name="selecciontipofrecuenciautilizacion" Type="smallint" />
+          <Property Name="seleccionfrecuenciautilizacion" Type="smallint" />
+          <Property Name="clasefrecuenciautilizacion" Type="smallint" />
+          <Property Name="claseexposicionpotencial" Type="smallint" />
+          <Property Name="claseriesgopotencial" Type="smallint" />
+          <Property Name="puntuacionriesgopotencial" Type="smallint" />
+          <Property Name="seleccionestadovolpul" Type="smallint" />
+          <Property Name="seleccionvolatilidadpulverulenciasolido" Type="smallint" />
+          <Property Name="clasevolatilidadpulverulenciasolido" Type="smallint" />
+          <Property Name="tempusovolatilidadpulverulencialiquido" Type="smallint" />
+          <Property Name="tempebullicionvolatilidadpulverulencialiquido" Type="smallint" />
+          <Property Name="clasevolatilidadpulverulenciaLiquido" Type="smallint" />
+          <Property Name="seleccionvolatilidadpulverulenciasolvapsolido" Type="smallint" />
+          <Property Name="clasevolatilidadpulverulenciasolvapsolido" Type="smallint" />
+          <Property Name="seleccionvolatilidadpulverulenciasolvapliquido" Type="smallint" />
+          <Property Name="clasevolatilidadpulverulenciasolvapliquido" Type="smallint" />
+          <Property Name="clasevolatilidadvulverulencia" Type="smallint" />
+          <Property Name="puntuacionvolatilidadvulverulencia" Type="smallint" />
+          <Property Name="seleccionprocedimientotrabajo" Type="smallint" />
+          <Property Name="claseprocedimientotrabajo" Type="smallint" />
+          <Property Name="puntuacionprocedimientotrabajo" Type="smallint" />
+          <Property Name="seleccionproteccionescolectivas" Type="smallint" />
+          <Property Name="claseproteccionescolectivas" Type="smallint" />
+          <Property Name="puntuacionproteccionescolectivas" Type="smallint" />
+          <Property Name="seleccionvla" Type="smallint" />
+          <Property Name="puntuacionvla" Type="smallint" />
+          <Property Name="puntuacionriesgoporinhalacion" Type="bigint" />
+          <Property Name="prioridadaccion" Type="smallint" />
+        </EntityType>
+        <EntityType Name="usuarios">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="150" />
+          <Property Name="Password" Type="varchar" MaxLength="45" />
+          <Property Name="Fecha_creacion" Type="timestamp" Precision="0" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="riskquimModelStoreContainer">
+          <EntitySet Name="rq_operaciones" EntityType="Self.rq_operaciones" Schema="riskquim" store:Type="Tables" />
+          <EntitySet Name="usuarios" EntityType="Self.usuarios" Schema="riskquim" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="riskquimModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="riskquimEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="rq_operaciones" EntityType="riskquimModel.rq_operaciones" />
+          <EntitySet Name="usuarios" EntityType="riskquimModel.usuario" />
+        </EntityContainer>
+        <EntityType Name="rq_operaciones">
+          <Key>
+            <PropertyRef Name="ID_Operacion" />
+          </Key>
+          <Property Name="ID_Operacion" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Usuario" Type="Int64" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="agentequimicooperacion" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="descripcion" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="seleccionfrasesH" Type="Int16" />
+          <Property Name="noaplicafrasesHcheck" Type="Int16" />
+          <Property Name="seleccionVLAED" Type="Int16" />
+          <Property Name="seleccionVLAEDmatpar" Type="Int16" />
+          <Property Name="seleccionVLAEDparticulada" Type="Int16" />
+          <Property Name="seleccionVLAEDnoparticulada" Type="Int16" />
+          <Property Name="seleccionsustanciacomercialsino" Type="Int16" />
+          <Property Name="seleccionmaterialesnosujetosanormativa" Type="Int16" />
+          <Property Name="frasesHseleccionadas" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="clasepeligro" Type="Int16" />
+          <Property Name="seleccioncantidaddia" Type="Int16" />
+          <Property Name="clasecantidaddia" Type="Int16" />
+          <Property Name="selecciontipofrecuenciautilizacion" Type="Int16" />
+          <Property Name="seleccionfrecuenciautilizacion" Type="Int16" />
+          <Property Name="clasefrecuenciautilizacion" Type="Int16" />
+          <Property Name="claseexposicionpotencial" Type="Int16" />
+          <Property Name="claseriesgopotencial" Type="Int16" />
+          <Property Name="puntuacionriesgopotencial" Type="Int16" />
+          <Property Name="seleccionestadovolpul" Type="Int16" />
+          <Property Name="seleccionvolatilidadpulverulenciasolido" Type="Int16" />
+          <Property Name="clasevolatilidadpulverulenciasolido" Type="Int16" />
+          <Property Name="tempusovolatilidadpulverulencialiquido" Type="Int16" />
+          <Property Name="tempebullicionvolatilidadpulverulencialiquido" Type="Int16" />
+          <Property Name="clasevolatilidadpulverulenciaLiquido" Type="Int16" />
+          <Property Name="seleccionvolatilidadpulverulenciasolvapsolido" Type="Int16" />
+          <Property Name="clasevolatilidadpulverulenciasolvapsolido" Type="Int16" />
+          <Property Name="seleccionvolatilidadpulverulenciasolvapliquido" Type="Int16" />
+          <Property Name="clasevolatilidadpulverulenciasolvapliquido" Type="Int16" />
+          <Property Name="clasevolatilidadvulverulencia" Type="Int16" />
+          <Property Name="puntuacionvolatilidadvulverulencia" Type="Int16" />
+          <Property Name="seleccionprocedimientotrabajo" Type="Int16" />
+          <Property Name="claseprocedimientotrabajo" Type="Int16" />
+          <Property Name="puntuacionprocedimientotrabajo" Type="Int16" />
+          <Property Name="seleccionproteccionescolectivas" Type="Int16" />
+          <Property Name="claseproteccionescolectivas" Type="Int16" />
+          <Property Name="puntuacionproteccionescolectivas" Type="Int16" />
+          <Property Name="seleccionvla" Type="Int16" />
+          <Property Name="puntuacionvla" Type="Int16" />
+          <Property Name="puntuacionriesgoporinhalacion" Type="Int64" />
+          <Property Name="prioridadaccion" Type="Int16" />
+        </EntityType>
+        <EntityType Name="usuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Fecha_creacion" Type="DateTime" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="riskquimModelStoreContainer" CdmEntityContainer="riskquimEntities">
+          <EntitySetMapping Name="rq_operaciones">
+            <EntityTypeMapping TypeName="riskquimModel.rq_operaciones">
+              <MappingFragment StoreEntitySet="rq_operaciones">
+                <ScalarProperty Name="prioridadaccion" ColumnName="prioridadaccion" />
+                <ScalarProperty Name="puntuacionriesgoporinhalacion" ColumnName="puntuacionriesgoporinhalacion" />
+                <ScalarProperty Name="puntuacionvla" ColumnName="puntuacionvla" />
+                <ScalarProperty Name="seleccionvla" ColumnName="seleccionvla" />
+                <ScalarProperty Name="puntuacionproteccionescolectivas" ColumnName="puntuacionproteccionescolectivas" />
+                <ScalarProperty Name="claseproteccionescolectivas" ColumnName="claseproteccionescolectivas" />
+                <ScalarProperty Name="seleccionproteccionescolectivas" ColumnName="seleccionproteccionescolectivas" />
+                <ScalarProperty Name="puntuacionprocedimientotrabajo" ColumnName="puntuacionprocedimientotrabajo" />
+                <ScalarProperty Name="claseprocedimientotrabajo" ColumnName="claseprocedimientotrabajo" />
+                <ScalarProperty Name="seleccionprocedimientotrabajo" ColumnName="seleccionprocedimientotrabajo" />
+                <ScalarProperty Name="puntuacionvolatilidadvulverulencia" ColumnName="puntuacionvolatilidadvulverulencia" />
+                <ScalarProperty Name="clasevolatilidadvulverulencia" ColumnName="clasevolatilidadvulverulencia" />
+                <ScalarProperty Name="clasevolatilidadpulverulenciasolvapliquido" ColumnName="clasevolatilidadpulverulenciasolvapliquido" />
+                <ScalarProperty Name="seleccionvolatilidadpulverulenciasolvapliquido" ColumnName="seleccionvolatilidadpulverulenciasolvapliquido" />
+                <ScalarProperty Name="clasevolatilidadpulverulenciasolvapsolido" ColumnName="clasevolatilidadpulverulenciasolvapsolido" />
+                <ScalarProperty Name="seleccionvolatilidadpulverulenciasolvapsolido" ColumnName="seleccionvolatilidadpulverulenciasolvapsolido" />
+                <ScalarProperty Name="clasevolatilidadpulverulenciaLiquido" ColumnName="clasevolatilidadpulverulenciaLiquido" />
+                <ScalarProperty Name="tempebullicionvolatilidadpulverulencialiquido" ColumnName="tempebullicionvolatilidadpulverulencialiquido" />
+                <ScalarProperty Name="tempusovolatilidadpulverulencialiquido" ColumnName="tempusovolatilidadpulverulencialiquido" />
+                <ScalarProperty Name="clasevolatilidadpulverulenciasolido" ColumnName="clasevolatilidadpulverulenciasolido" />
+                <ScalarProperty Name="seleccionvolatilidadpulverulenciasolido" ColumnName="seleccionvolatilidadpulverulenciasolido" />
+                <ScalarProperty Name="seleccionestadovolpul" ColumnName="seleccionestadovolpul" />
+                <ScalarProperty Name="puntuacionriesgopotencial" ColumnName="puntuacionriesgopotencial" />
+                <ScalarProperty Name="claseriesgopotencial" ColumnName="claseriesgopotencial" />
+                <ScalarProperty Name="claseexposicionpotencial" ColumnName="claseexposicionpotencial" />
+                <ScalarProperty Name="clasefrecuenciautilizacion" ColumnName="clasefrecuenciautilizacion" />
+                <ScalarProperty Name="seleccionfrecuenciautilizacion" ColumnName="seleccionfrecuenciautilizacion" />
+                <ScalarProperty Name="selecciontipofrecuenciautilizacion" ColumnName="selecciontipofrecuenciautilizacion" />
+                <ScalarProperty Name="clasecantidaddia" ColumnName="clasecantidaddia" />
+                <ScalarProperty Name="seleccioncantidaddia" ColumnName="seleccioncantidaddia" />
+                <ScalarProperty Name="clasepeligro" ColumnName="clasepeligro" />
+                <ScalarProperty Name="frasesHseleccionadas" ColumnName="frasesHseleccionadas" />
+                <ScalarProperty Name="seleccionmaterialesnosujetosanormativa" ColumnName="seleccionmaterialesnosujetosanormativa" />
+                <ScalarProperty Name="seleccionsustanciacomercialsino" ColumnName="seleccionsustanciacomercialsino" />
+                <ScalarProperty Name="seleccionVLAEDnoparticulada" ColumnName="seleccionVLAEDnoparticulada" />
+                <ScalarProperty Name="seleccionVLAEDparticulada" ColumnName="seleccionVLAEDparticulada" />
+                <ScalarProperty Name="seleccionVLAEDmatpar" ColumnName="seleccionVLAEDmatpar" />
+                <ScalarProperty Name="seleccionVLAED" ColumnName="seleccionVLAED" />
+                <ScalarProperty Name="noaplicafrasesHcheck" ColumnName="noaplicafrasesHcheck" />
+                <ScalarProperty Name="seleccionfrasesH" ColumnName="seleccionfrasesH" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="agentequimicooperacion" ColumnName="agentequimicooperacion" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="ID_Operacion" ColumnName="ID_Operacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usuarios">
+            <EntityTypeMapping TypeName="riskquimModel.usuario">
+              <MappingFragment StoreEntitySet="usuarios">
+                <ScalarProperty Name="Fecha_creacion" ColumnName="Fecha_creacion" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

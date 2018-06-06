@@ -1,0 +1,445 @@
+﻿/*@charset "utf-8";*/
+
+
+/**** Estilos generales de los Formularios *****************************************************************/
+/***********************************************************************************************************/
+
+/* General */
+form li:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+form li div {
+    color: #444;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+}
+
+form li span {
+    color: #444;
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+}
+
+    form li span label {
+        clear: both;
+        color: #444;
+        display: block;
+        font-size: 9px;
+        line-height: 9px;
+        margin: 0;
+        padding-top: 3px;
+    }
+
+form li div.left {
+    display: inline;
+    float: left;
+    width: 48%;
+}
+
+form li div.right {
+    display: inline;
+    float: right;
+    width: 48%;
+}
+
+form li div.left .medium {
+    width: 100%;
+}
+
+form li div.right .medium {
+    width: 100%;
+}
+
+form li div label {
+    clear: both;
+    color: #444;
+    display: block;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    padding-top: 3px;
+}
+
+/* Input tipo texto */
+input.text {
+    background: #fff url(../img/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+    color: #333;
+    font-size: 100%;
+    margin: 0;
+    padding: 2px 5px;
+}
+
+input.number {
+    width: 90px;
+}
+
+input.small {
+    width: 35px;
+}
+
+    input.small.porcentaje {
+        width: 45px;
+    }
+
+input.medium {
+    width: 50%;
+}
+
+input.large {
+    width: 97%;
+}
+
+label.description {
+    border: none;
+    color: #222;
+    display: block;
+    font-size: 95%;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 0 1px;
+}
+
+label.descriptionrojo {
+    border: none;
+    color: red;
+    display: block;
+    font-size: 95%;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 0 1px;
+}
+
+/* Input tipo checkbox */
+input.checkbox {
+    display: inline;
+    height: 15px;
+    margin: 6px 0 0 0;
+    width: 24px;
+}
+
+.checkboxlabel {
+    font-size: x-small;
+}
+
+    .checkboxlabel:hover {
+        background-color: #FFC;
+    }
+
+    .checkboxlabel.selected {
+        background-color: #CFF;
+    }
+
+label.checkbox {
+    color: #444;
+    display: block;
+    font-size: 100%;
+    margin: -1.9em 0px 0px 35px;
+    padding: 4px 0 5px;
+    width: 90%;
+}
+
+/* Input tipo radio */
+input.radio {
+    display: block;
+    height: 13px;
+    line-height: 1.4em;
+    margin: 6px 0 0 3px;
+    width: 13px;
+}
+
+label.choice {
+    color: #444;
+    display: block;
+    font-size: 100%;
+    line-height: 1.4em;
+    margin: -1.55em 0 0 30px;
+    padding: 4px 0 5px;
+    width: 90%;
+}
+
+/* Select */
+select.select {
+    color: #333;
+    font-size: 100%;
+    margin: 1px 0;
+    padding: 1px 0 0;
+    background: #fff url(../img/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+}
+
+select.small {
+    width: 25%;
+}
+
+select.medium {
+    width: 75%;
+}
+
+select.large {
+    width: 100%;
+}
+
+select.select[class] {
+    margin: 0;
+    padding: 1px 0;
+}
+
+*:first-child + html select.select[class] {
+    margin: 1px 0;
+}
+
+.safari select.select {
+    font-size: 120% !important;
+    margin-bottom: 1px;
+}
+
+/* Textarea */
+textarea.textarea {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    background: #fff url(../img/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+    color: #333;
+    margin: 0;
+    width: 99%;
+}
+
+textarea.small {
+    height: 5.5em;
+}
+
+textarea.medium {
+    height: 10em;
+}
+
+textarea.large {
+    height: 20em;
+}
+
+/* Mensajes de error */
+
+.error_message {
+    background: #fff;
+    border: 1px dotted red;
+    margin-left: 10px;
+    margin-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
+    text-align: center;
+    width: 99%;
+    display: none;
+}
+
+
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formulario Operaciones Control Banding ***************************************************************/
+
+/* General */
+#seleccion_peligrosidad_frasesH, #seleccion_peligrosidad_frasesR {
+    margin-left: 10px;
+}
+
+/* Tabla selecci�n de Capacidad y Cantidad */
+.tabla_elecciones {
+    width: 100%;
+}
+
+    .tabla_elecciones td {
+        width: 33%;
+        border-left: #CCC solid 1px;
+        padding-right: 10px;
+    }
+
+    .tabla_elecciones p {
+        margin-left: 20px;
+        font-size: 9px;
+        text-align: justify;
+        margin-bottom: 0px;
+    }
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formularios CLP **************************************************************************************/
+
+/* S�mbolos de peligro */
+#selector_simbolos_peligro {
+    margin-left: 0px;
+    width: auto;
+}
+
+    #selector_simbolos_peligro img {
+        margin-bottom: 20px;
+        border: 0px;
+        vertical-align: middle;
+        width: 65px;
+        margin-left: 10px;
+        padding: 2px;
+    }
+
+    #selector_simbolos_peligro span {
+        padding-right: 5px;
+    }
+
+        #selector_simbolos_peligro span.selected img {
+            border: 3px #09F solid;
+        }
+
+/* Pictogramas de peligro */
+#selector_pictogramas_peligro {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+    #selector_pictogramas_peligro img {
+        border: solid #666 1px;
+        background-color: #FFF;
+        padding: 1px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+        vertical-align: middle;
+        width: 90px;
+    }
+
+    #selector_pictogramas_peligro span.selected img {
+        border: 3px #09F solid;
+    }
+
+    #selector_pictogramas_peligro span {
+        padding-right: 20px;
+    }
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formularios Producto *********************************************************************************/
+
+#EtNombreProducto {
+    margin-top: -10px;
+    color: #888;
+    font-size: 18px;
+    text-align: right;
+}
+
+#EtComposicion {
+    float: right;
+    color: #666;
+    font-size: 12px;
+    text-align: right;
+}
+
+#EtPorcentComposicion {
+    color: #888;
+    font-size: 18px;
+    text-align: right;
+}
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formulario to Wizard **************************************************************************************/
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    margin: 0px;
+    padding: 5px 0px;
+    color: #b0232a;
+    font-weight: bold;
+}
+
+    legend + p {
+        margin-left: 2px;
+        font-size: 11px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-weight: bold
+    }
+
+.prev, .sig {
+    background-color: #b0232a;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+    .prev:hover, .sig:hover {
+        background-color: #006;
+        text-decoration: none;
+        color: white;
+    }
+
+.prev {
+    float: left;
+}
+
+.sig {
+    float: right;
+}
+
+#steps {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: solid 1px #999;
+    background-color: #7E9491;
+}
+
+    #steps li {
+        font-size: 24px;
+        padding: 0px;
+        float: left;
+        width: 14%;
+        /*    min-width: 100px; */
+        color: white;
+    }
+
+        #steps li span {
+            font-size: 11px;
+            display: block;
+            color: white;
+        }
+
+        #steps li a {
+            color: white;
+        }
+
+        #steps li.current {
+            color: black;
+        }
+
+        #steps li span.current {
+            color: black;
+        }
+
+        #steps li a.current {
+            color: black;
+        }
+/***********************************************************************************************************/
+

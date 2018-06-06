@@ -1,0 +1,804 @@
+﻿@charset "utf-8";
+
+/**** Estilos generales de los Formularios *****************************************************************/
+/***********************************************************************************************************/
+/* Nuevos 2017-06-13*/
+.tooltip_txt {
+    position: absolute;
+    background: #7E9491;
+    max-width: 674px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0px 8px;
+    margin-top: -10px;
+    margin-left: 10px;
+    z-index: 3;
+    display: none;
+    background-color: #7E9491;
+}
+
+.tooltip_txt blockquote {
+        margin: 0px 5px;
+        padding: 0px 10px;
+    }
+
+.caja_resultado {
+    background-color: #ffe846;
+    margin: 15px auto;
+    padding: 10px;
+    height: 150px;
+    width: 300px;
+    border: solid 1px #7c7c7c;
+}
+
+.caja_resultado_medio {
+    background-color: #ffe846;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 0px 0px 0px;
+    height: 75px;
+    width: 150px;
+    border: solid 1px #7c7c7c;
+}
+
+.caja_resultado_medio_largo {
+    background-color: #ffe846;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 0px 0px 0px;
+    height: 75px;
+    width: 300px;
+    border: solid 1px #7c7c7c;
+}
+
+.titulo_resultados {
+    font-size:15px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.titulo_resultados_medio {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 10px 10px 40px;
+    text-align: center;
+}
+.caja_etiquetas {
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+    float:left;
+}
+
+.caja_etiquetas_medio {
+    padding: 5px;
+    height: 40px;
+    width: 80px;
+}
+
+.caja_valores {
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+    float:left;
+}
+
+
+.literal_etiquetas {
+    float: right;
+    font-weight: bold;
+}
+
+.literal_etiquetas_medio {
+    background-color: white;
+    margin-left: 10px;
+    padding: 2px 10px 2px 10px;
+    font-weight: bold;
+}
+.caja_clase {
+    background-color: white;
+    margin-left:30px;
+    padding: 2px 10px 2px 10px;
+    border: solid 1px #7c7c7c;
+    font-weight:bold;
+}
+
+.caja_clase_media {
+    background-color: white;
+    margin-left: 10px;
+    padding: 2px 10px 2px 10px;
+    border: solid 1px #7c7c7c;
+    font-weight: bold;
+    display:inline;
+}
+
+.caja_puntuacion {
+    background-color: white;
+    margin-left: 30px;
+    padding: 1px 10px 2px 10px;
+    border: solid 1px #7c7c7c;
+    font-weight: bold;
+}
+
+
+.TemUti {
+    display:inline;    
+}
+
+label.description_ind_peligro {
+    border: none;
+ /*   color: #222;*/
+    display: block;
+    font-size: 95%;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0px 0px 1px;
+    float: left;
+    width: 180px;
+    height: 50px;
+}
+
+.seleccion_si_no_ind_peligro {
+    /*display: block;*/
+    float: right;
+    width: 100px;
+    height: 50px;
+    margin-right: 400px;
+    padding: 10px 0px 0px 0px;
+}
+
+label.description_VLA {
+    border: none;
+    /*   color: #222;*/
+    display: block;
+    font-size: 95%;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0px 0px 1px;
+    float: left;
+    width: 110px;
+    height: 50px;
+}
+
+.seleccion_por_VLA_ED {
+    /*display: block;*/
+    float: right;
+    width: 100px;
+    height: 50px;
+    margin-right: 470px;
+    padding: 10px 0px 0px 0px;
+}
+
+label.description_mat_par {
+    border: none;
+    /*   color: #222;*/
+    display: block;
+    font-size: 95%;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0px 0px 1px;
+    float: left;
+    width: 210px;
+    height: 50px;
+}
+
+.seleccion_si_no_mat_par {
+    /*display: block;*/
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    padding: 10px 0px 0px 0px;
+    background-color: green;
+}
+
+label.description_sus_com {
+    border: none;
+    /*   color: #222;*/
+    display: block;
+    font-size: 95%;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0px 0px 1px;
+    float: left;
+    width: 230px;
+    height: 50px;
+}
+
+.seleccion_si_no_sus_com {
+    /*display: block;*/
+    float: right;
+    width: 430px;
+    height: 100px;
+    margin-right: 20px;
+    padding: 10px 0px 0px 0px;
+    background-color: turquoise;
+}
+
+label.description_VLA_ED_no_par {
+    border: none;
+    /*   color: #222;*/
+    display: block;
+    font-size: 95%;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 0px 0px 1px;
+    float: right;
+    width: 230px;
+    height: 50px;
+}
+.seleccion_VLA_ED_par {
+    /*display: block;*/
+    float: right;
+    width: 290px;
+    height: 160px;
+    margin-right: 50px;
+    padding: 5px 0px 0px 0px;
+    background-color:yellow;
+}
+
+.seleccion_VLA_ED_no_par {
+    /*display: block;*/
+    float: right;
+    width: 290px;
+    height: 160px;
+    margin-right: 50px;
+    padding: 5px 0px 0px 0px;
+    background-color: yellow;
+}
+
+.tabla_seleccion_procedimiento_trabajo {
+    width: 700px;
+    height: 140px;
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.tabla_seleccion_procedimiento_trabajo td:last-child {
+        width: 470px;
+        text-align: left;
+}
+
+.tabla_seleccion_procedimiento_trabajo td:nth-child(4) {
+        width: 100px;
+        padding: 0px 0px 0px 0px; 
+}
+
+.tabla_seleccion_procedimiento_trabajo td:nth-child(3) {
+        width: 40px;
+}
+.tabla_seleccion_procedimiento_trabajo tr {
+        height: 8px;
+}
+
+
+/*td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 0px;
+    text-align: center;
+}*/
+
+img.imgprocedimiento {
+    width: 100px;
+    height: 80px;
+    
+}
+
+.tabla_seleccion_proteccion_colectiva_1 {
+    width: 340px;
+    height: 100px;
+    margin:0px 0px 0px 0px;
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    background-color:white;
+}
+.tabla_seleccion_proteccion_colectiva_1 td:last-child {
+        width: 180px;
+        text-align: left;
+    }
+
+.tabla_seleccion_proteccion_colectiva_1 td:nth-child(3) {
+        width: 70px;
+        padding: 0px 0px 0px 0px;
+    }
+
+.tabla_seleccion_proteccion_colectiva_1 td:nth-child(2) {
+    width: 10px;
+}
+
+    .tabla_seleccion_proteccion_colectiva_1 td:first-child {
+     width: 10px;       
+    }
+
+
+img.imgproteccion {
+    width: 70px;
+    height: 60px;
+}
+
+.tabla_seleccion_proteccion_colectiva_2 {
+    width: 340px;
+    height: 150px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    float: right;
+    background-color: white;
+}
+
+.tabla_volatilidad_pulverulencia_liquido {
+    width: 400px;
+    height: 150px;
+    margin-left: 60px;
+    border: none;
+    padding: 10px;
+    text-align: left;    
+}
+   
+
+    .tabla_volatilidad_pulverulencia_liquido td:first-child {
+        width: 120px;
+        border: none;
+        text-align: left;        
+    }
+
+    .tabla_volatilidad_pulverulencia_liquido td:last-child {
+        width: 20px;
+        border: none;
+        text-align: left;        
+    }
+
+    /* Fin nuevos 2017-06-13*/
+    /* General */
+    form li:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+    
+form li div {
+    color: #444;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+}
+
+form li span {
+    color: #444;
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0 0 8px;
+}
+
+form li span label {
+        clear: both;
+        color: #444;
+        display: block;
+        font-size: 9px;
+        line-height: 9px;
+        margin: 0;
+        padding-top: 3px;
+    }
+
+form li div.left {
+    display: inline;
+    float: left;
+    width: 48%;
+}
+
+form li div.right {
+    display: inline;
+    float: right;
+    width: 48%;
+}
+
+form li div.left .medium {
+    width: 100%;
+}
+
+form li div.right .medium {
+    width: 100%;
+}
+
+form li div label {
+    clear: both;
+    color: #444;
+    display: block;
+    font-size: 9px;
+    line-height: 9px;
+    margin: 0;
+    padding-top: 3px;
+}
+
+/* Input tipo texto */
+input.text {
+    background: #fff url(../img/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+    color: #333;
+    font-size: 100%;
+    margin: 0;
+    padding: 2px 5px;
+}
+
+input.number {
+    width: 90px;
+}
+
+input.small {
+    width: 35px;
+}
+
+    input.small.porcentaje {
+        width: 45px;
+    }
+
+input.medium {
+    width: 50%;
+}
+
+input.large {
+    width: 97%;
+}
+
+label.description {
+    border: none;
+    color: #222;
+    display: block;
+    font-size: 95%;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 0 1px;
+}
+
+label.descriptionrojo {
+    border: none;
+    color: red;
+    display: block;
+    font-size: 95%;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0 0 1px;
+}
+
+/* Input tipo checkbox */
+input.checkbox {
+    display: inline;
+    height: 15px;
+    margin: 6px 0 0 0;
+    width: 24px;
+}
+
+.checkboxlabel {
+    font-size: x-small;
+}
+
+    .checkboxlabel:hover {
+        background-color: #FFC;
+    }
+
+    .checkboxlabel.selected {
+        background-color: #CFF;
+    }
+
+label.checkbox {
+    color: #444;
+    display: block;
+    font-size: 100%;
+    margin: -1.9em 0px 0px 35px;
+    padding: 4px 0 5px;
+    width: 90%;
+}
+
+/* Input tipo radio */
+input.radio {
+    display:block;
+    height: 13px;
+    line-height: 1.4em;
+    margin: 6px 0 0 3px;
+    width: 13px;
+}
+
+label.choice {
+    color: #444;
+    display: block;  
+    font-size: 100%;
+    line-height: 1.4em;
+    margin: -1.55em 0 0 30px;
+    padding: 4px 0 5px;
+    width: 90%;
+}
+
+/* Select */
+select.select {
+    color: #333;
+    font-size: 100%;
+    margin: 1px 0;
+    padding: 1px 0 0;
+    background: #fff url(../img/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+}
+
+select.small {
+    width: 25%;
+}
+
+select.medium {
+    width: 75%;
+}
+
+select.large {
+    width: 100%;
+}
+
+select.select[class] {
+    margin: 0;
+    padding: 1px 0;
+}
+
+*:first-child + html select.select[class] {
+    margin: 1px 0;
+}
+
+.safari select.select {
+    font-size: 120% !important;
+    margin-bottom: 1px;
+}
+
+/* Textarea */
+textarea.textarea {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    background: #fff url(../img/shadow.gif) repeat-x top;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-top: 1px solid #7c7c7c;
+    color: #333;
+    margin: 0;
+    width: 99%;
+}
+
+textarea.small {
+    height: 5.5em;
+}
+
+textarea.medium {
+    height: 10em;
+}
+
+textarea.large {
+    height: 20em;
+}
+
+/* Mensajes de error */
+
+.error_message {
+    background: #fff;
+    border: 1px dotted red;
+    margin-left: 10px;
+    margin-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4px;
+    text-align: center;
+    width: 99%;
+    display: none;
+}
+
+
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formulario Operaciones Control Banding ***************************************************************/
+
+/* General */
+#seleccion_peligrosidad_frasesH, #seleccion_peligrosidad_frasesR {
+    margin-left: 10px;
+}
+
+/* Tabla selección de Capacidad y Cantidad */
+.tabla_elecciones {
+    width: 100%;
+}
+
+    .tabla_elecciones td {
+        width: 33%;
+        border-left: #CCC solid 1px;
+        padding-right: 10px;
+    }
+
+    .tabla_elecciones p {
+        margin-left: 20px;
+        font-size: 9px;
+        text-align: justify;
+        margin-bottom: 0px;
+    }
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formularios CLP **************************************************************************************/
+
+/* Símbolos de peligro */
+#selector_simbolos_peligro {
+    margin-left: 0px;
+    width: auto;
+}
+
+    #selector_simbolos_peligro img {
+        margin-bottom: 20px;
+        border: 0px;
+        vertical-align: middle;
+        width: 65px;
+        margin-left: 10px;
+        padding: 2px;
+    }
+
+    #selector_simbolos_peligro span {
+        padding-right: 5px;
+    }
+
+        #selector_simbolos_peligro span.selected img {
+            border: 3px #09F solid;
+        }
+
+/* Pictogramas de peligro */
+#selector_pictogramas_peligro {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+    #selector_pictogramas_peligro img {
+        border: solid #666 1px;
+        background-color: #FFF;
+        padding: 1px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+        vertical-align: middle;
+        width: 90px;
+    }
+
+    #selector_pictogramas_peligro span.selected img {
+        border: 3px #09F solid;
+    }
+
+    #selector_pictogramas_peligro span {
+        padding-right: 20px;
+    }
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formularios Producto *********************************************************************************/
+
+#EtNombreProducto {
+    margin-top: -10px;
+    color: #888;
+    font-size: 18px;
+    text-align: right;
+}
+
+#EtComposicion {
+    float: right;
+    color: #666;
+    font-size: 12px;
+    text-align: right;
+}
+
+#EtPorcentComposicion {
+    color: #888;
+    font-size: 18px;
+    text-align: right;
+}
+/***********************************************************************************************************/
+
+
+/***********************************************************************************************************/
+/**** Formulario to Wizard **************************************************************************************/
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    margin: 0px;
+    padding: 5px 0px;
+    color: #b0232a;
+    font-weight: bold;
+}
+
+    legend + p {
+        margin-left: 2px;
+        font-size: 11px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-weight: bold
+    }
+
+.prev, .next {
+    background-color: #b0232a;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+    .prev:hover, .next:hover {
+        background-color: #006;
+        text-decoration: none;
+        color: white;
+    }
+.prev {
+    float: left;
+}
+ 
+.next {
+    float: right;
+}
+ 
+#steps {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: solid 1px #999;
+    background-color: #7E9491;
+}
+
+    #steps li {
+        font-size: 24px;
+        padding: 0px;
+        float: left;
+        width: 14% ;
+    /*    min-width: 100px; */
+        color: white;
+        }
+
+        #steps li span {
+            font-size: 11px;
+            display: block;
+            color: white;
+            
+        }
+
+    #steps li a{
+    
+        color: white;
+    }    
+
+        #steps li.current {
+            color: black;
+        }
+        
+        #steps li span.current {
+            color: black;
+        }
+
+        #steps li a.current {
+            color: black;
+        }
+/***********************************************************************************************************/

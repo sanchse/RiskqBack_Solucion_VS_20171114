@@ -1,0 +1,1148 @@
+﻿@charset "utf-8";
+
+/**** Estilos generales de la página ***********************************************************************/
+/***********************************************************************************************************/
+/*
+Versio centrada del container pagina
+#container_pagina {min-height:100%;position:relative; width:100%;margin-left:auto;margin-right: auto;}
+*/
+
+
+
+/* Sergio: 2017-08-15 */
+.formulario_registra_usuario {
+    margin-left: 5px;
+    padding: 7px 10px;
+    height: 96px;
+    color: white;
+    width: 200px;
+    background-color: #0066ff;
+}
+
+/* Nuevos 2017-06-13*/
+
+.cuadro_Nota {
+    background-color: white; 
+    margin: 15px;
+    padding: 10px;
+}
+.cuadro_Nota_Indentado {
+    padding-left: 80px;
+}
+
+.cuadro_texto_inicial {
+    background-color: white;
+    margin: 0px 15px 15px 250px;
+    padding: 10px;
+}
+
+
+.prioridad_Accion {
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
+    font-weight:bold
+}
+
+.tabla_seleccion_frasesH {
+    width: 422px;
+    background-color: lightgrey;
+    margin: 10px 10px 10px 100px;
+    padding: 10px;
+}
+
+.no_aplica_FrasesH {
+    background-color: lightgrey;
+    margin: 10px 160px 10px 100px;
+    padding: 5px 0px 5px 10px;
+}
+.seleccion_clase_peligro_otros {
+    background-color: lightgrey;
+    margin: 10px 10px 10px 40px;
+    padding: 10px;
+}
+
+.seleccion_clase_exposicion_potencial_cantidad {
+    background-color: lightgrey;
+    margin: 30px 350px 40px 80px;
+    padding: 10px;
+}
+
+.seleccion_clase_exposicion_potencial_no_se_usa {
+    float: left;
+    margin: 5px 0px 0px 15px;
+    padding: 5px;
+}
+
+.seleccion_clase_exposicion_potencial_frecuencia {
+    float: left;
+    width: 200px;
+    height: 120px;
+    margin: 10px 10px 10px 25px;
+    background-color: lightgrey;
+}
+
+.seleccion_clase_exposicion_potencial_frecuencia1 {
+    float: right;
+    width: 200px;
+    height: 120px;
+    margin: 10px 10px 10px 35px;
+    background-color: lightgrey;
+}
+
+
+.seleccion_cla_exp_pot_fre_diaria {
+    display: inline-block;
+    width: 200px;
+    height:200px;
+    margin: 10px;
+    background-color: lightgrey;
+    
+}
+
+.seleccion_VLA_ED {
+    width: 40%;
+    background-color: lightgrey;
+    margin: 40px 350px 40px 100px;
+    padding: 10px;
+    float: left;
+}
+
+.seleccion_VLA {
+    background-color: lightgrey;
+    margin: 40px 350px 40px 100px;
+    padding: 10px;
+}
+
+.seleccion_volatilidad_pulverulencia {
+    padding: 10px 10px 10px 20px;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+
+.volatilidad_pulverulencia_part_vapor_solido {
+    float: left;
+    width: 350px;
+    /*//   height: 120px;*/
+    margin: 10px 0px 10px 10px;
+    background-color: lightgrey;
+    padding: 5px 0px 0px 5px;
+    margin-bottom: 20px;
+}
+.volatilidad_pulverulencia_part_vapor_vapor {
+    float: right;
+    width: 300px;
+    /*//   height: 120px;*/
+    margin: 10px 0px 10px 0px;
+    background-color: lightgrey;
+    padding: 5px 0px 0px 5px;
+    margin-bottom: 20px;
+}
+
+.seleccion_pv {
+    background-color: lightgrey;
+    margin: 10px 350px 40px 100px;
+    padding: 10px;
+}
+
+
+#aaa {
+    clear:left;
+}
+/* Fin nuevos 2017-06-13*/
+.tabla_busqueda {
+    width: 648px;
+}
+
+    .tabla_busqueda th {
+        background-color: #DDDDDD;
+        text-align: center;
+    }
+
+        .tabla_busqueda th.left {
+            text-align: left;
+        }
+
+    .tabla_busqueda td {
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+
+    .tabla_busqueda .nombre_col {
+        width: 440px;
+        text-align: left;
+        display: table-cell;
+        word-break: break-all;
+    }
+
+    .tabla_busqueda .cas_number {
+        width: 80px;
+    }
+
+    .tabla_busqueda .cee_number {
+        width: 70px;
+    }
+
+    .tabla_busqueda .ind_number {
+        width: 90px;
+    }
+
+    .tabla_busqueda .navegacion {
+        background-color: #EEE;
+    }
+
+#container_pagina {
+    width: 100%;
+    width: 972px;
+}
+
+#cuerpo_pagina {
+    padding-bottom: 50px;
+    text-align: justify;
+}
+
+
+
+/*FORMAT INSTITUT*/
+.Link_Frame_Superior_Institut {
+    /*color: #577974;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#titol_aplicacio {
+    color: white;
+    font-family: Lucida-sans, "Lucida sans", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #7E9491;
+    padding: 3px 1% 3px 8px;
+    text-align: left;
+}
+/*FI FORMAT INSTITUT*/
+
+
+* html form li {
+    height: 1%;
+}
+
+* html .buttons {
+    height: 1%;
+}
+
+* html form li div {
+    display: inline-block;
+}
+
+html, body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    color: #414141;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 0; /* This removes the border around the viewport in old versions of IE */
+    width: 100%;
+    /* min-width:600px;   Minimum width of layout - remove line if not required */
+    height: 100%;
+    text-align: justify;
+}
+
+
+
+
+h1 {
+    background-color: #006;
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+    text-decoration: none;
+    text-indent: -8000px;
+}
+
+    h1 a {
+        display: block;
+        height: 100%;
+        min-height: 40px;
+        overflow: hidden;
+    }
+
+img {
+    behavior: url(iepngfix.htc);
+    border: none;
+}
+
+map {
+    border: none;
+}
+
+blockquote {
+    margin: -5px 20px 10px;
+    padding: 5px 15px;
+}
+
+#contenido_general {
+    text-align: justify;
+    width: 750px;
+    float: right;
+    margin-top: 15px;
+}
+
+#loading {
+    text-align: center;
+    height: 32px;
+}
+
+.btn {
+    float: left;
+    background: url(../img/btn_left.png) no-repeat;
+    padding: 0 0 0 10px;
+    text-align: center;
+}
+
+    .btn a {
+        float: left;
+        height: 40px;
+        background: url(../img/btn_stretch.png) repeat-x left top;
+        line-height: 40px;
+        padding: 0 10px;
+        color: #fff;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .btn span {
+        background: url(../img/btn_right.png) no-repeat;
+        float: left;
+        width: 10px;
+        height: 40px;
+    }
+
+.btn_submit {
+    background-color: #002c85;
+    margin-right: 10px;
+}
+
+.btn_desactivado {
+    background-color: grey;
+    margin-right: 10px;
+}
+
+.btn_etiquetaclp {
+    background-color: red;
+    margin-right: 10px;
+}
+
+
+/* General... */
+.tachado {
+    text-decoration: line-through;
+}
+
+.OK {
+    color: green;
+    font-weight: bold;
+}
+
+.KO {
+    color: red;
+    font-weight: bold;
+}
+
+.naranja_normal {
+    color: #ff7c06;
+}
+
+.naranja_pequeño {
+    font-size: 11px;
+    color: #ff7c06;
+}
+
+h1 {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    font-size: 12px;
+    color: #ff7c06;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+    hr.gris {
+        background-color: #cccccc;
+    }
+
+    hr.azul {
+        background-color: #99bcdc;
+    }
+
+
+
+
+.Titulo_Seccion {
+    font-size: 14px;
+    font-weight: bold;
+    color: #61A3D5;
+}
+
+.SubTitulo_Seccion {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #99bcdc;
+}
+
+.Texto_Azul {
+    font-weight: bold;
+    color: #99bcdc;
+}
+
+.texto_gris {
+    color: #666;
+}
+
+#nota1 {
+    display: none;
+}
+
+#nota2 {
+    display: none;
+}
+
+#nota3 {
+    display: none;
+}
+
+#nota4 {
+    display: none;
+}
+
+#nota5 {
+    display: none;
+}
+
+#notas {
+    display: none;
+}
+
+#grupo1 {
+    display: none;
+}
+
+#grupo2 {
+    display: none;
+}
+
+#grupo2_notas {
+    display: none;
+}
+
+#grupo_modificaciones {
+    display: none;
+}
+
+#niveles_riesgo {
+    color: #666;
+    margin-top: 30px;
+}
+
+*[id^='SOL_'] {
+    display: inherit;
+}
+
+*[id^='LIQ_'] {
+    display: none;
+}
+
+*[id^='GAS_'] {
+    display: none;
+}
+
+#top {
+    display: block;
+    height: 10px;
+    margin: 0 auto;
+    width: 750px;
+    float: right;
+    margin-top: 5px;
+}
+
+#bottom {
+    display: block;
+    height: 10px;
+    margin: 0 auto;
+    width: 750px;
+    float: right;
+}
+/* Definición del tamñano del formulario y los bordes superior e inferior */
+#form_container {
+    *background: #EEE;
+    margin: 0 auto;
+    text-align: justify;
+    width: 750px;
+    float: right;
+}
+
+form {
+    margin: 20px 20px 0;
+    padding: 0 0 20px;
+}
+
+    form ul {
+        font-size: 100%;
+        list-style-type: none;
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 0;
+        width: 100%;
+    }
+
+    form li {
+        padding-left: 10px;
+        display: block;
+        margin: 0;
+        position: relative;
+    }
+
+/* Tabla de composición de agentes*/
+table.agentes {
+    background-color: #CCC;
+    margin-bottom: 15px;
+}
+
+    table.agentes thead th {
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    table.agentes tfoot th {
+        font-size: 12px;
+        font-weight: bold;
+        height: 20px;
+        text-align: center;
+    }
+
+    table.agentes td.selected {
+        background-color: #FF9;
+    }
+
+    table.agentes td.none {
+        background-color: white;
+    }
+
+    table.agentes td {
+        border-width: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #999;
+        background-color: white;
+        text-align: center;
+    }
+
+        table.agentes td:first-child {
+            text-align: left;
+        }
+
+    table.agentes a {
+        text-decoration: none;
+    }
+
+/* Tabla de LOAEL*/
+table.loael {
+    -1px;
+}
+
+    table.loael td {
+        border-width: 0px;
+        padding-left: 0px;
+        padding-right: 10px;
+        border-color: #999;
+        text-align: left;
+    }
+
+        table.loael td:first-child {
+            min-width: 150px;
+        }
+
+
+
+/***********************************************************************************************************/
+/**** Estilos página default de Sustancias, Productos y Operacions *****************************************/
+
+/* Título de la búsqueda */
+#encabezado {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: solid 1px #999;
+    background-color: #7E9491;
+}
+
+    #encabezado p {
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        margin: 0px;
+        padding: 10px;
+    }
+
+/* Resultados de la búsqueda */
+#contenedor_busqueda {
+    width: 90%;
+    margin: auto;
+    min-height: 60px;
+}
+
+#resultados_busqueda {
+    list-style: none;
+    width: 100%;
+    margin: auto;
+}
+
+#cuerpo {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#calculando {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Respuesta de la operación al grabar */
+#respuesta {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #666;
+    margin: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+}
+/***********************************************************************************************************/
+
+.grupoFrases {
+    margin-bottom: 20px;
+}
+
+.GrupoOpciones {
+    padding: 10px 10px 10px 20px;
+    background-color: #DDD;
+    margin-bottom: 20px;
+}
+
+    .GrupoOpciones h3 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: -10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .GrupoOpciones blockquote {
+        margin: 0px 20px 10px;
+        padding: 5px 15px;
+    }
+
+
+#okbutton {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.botoneditar {
+    text-decoration: none;
+    background-image: url("../img/pencil.png");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0px -1px;
+    margin-left: 10px;
+    padding-bottom: 4px;
+}
+
+.botondelete {
+    text-decoration: none;
+    background-image: url("../img/delete.png");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0px -1px;
+    padding-bottom: 4px;
+}
+
+.botoninfo {
+    text-decoration: none;
+    background-image: url("../img/info.png");
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0px -1px;
+}
+
+.botonadd {
+    color: #000;
+    text-decoration: none;
+    background-image: url("../img/add.png");
+    background-repeat: no-repeat;
+    background-position: 6px -20px;
+    padding-left: 25px;
+    padding-top: 2px;
+}
+
+    .botonadd:hover {
+        background-image: url("../img/add.png");
+        background-repeat: no-repeat;
+        background-position: 6px -1px;
+        padding-left: 25px;
+        background-color: #FFF7C0;
+        padding-top: 1px;
+    }
+
+    .botonadd.blue {
+        color: #009;
+    }
+
+.sgrey {
+    font-weight: bold;
+    color: #999;
+    text-decoration: none;
+}
+
+.elinks {
+    color: #000066;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu_insht_lateral {
+    width: 210px;
+    text-align: left;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    background-color: #7E9491;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    min-height: 600px;
+}
+
+    #menu_insht_lateral a {
+        background: url(../img/menu.gif) center no-repeat;
+        background-position: 0px 0px;
+        background-color: #7e9491;
+        padding-left: 10px;
+        padding-top: 8px;
+        height: 32px;
+        color: #7E9491;
+        text-decoration: none;
+        display: block;
+        margin-bottom: -8px;
+        margin-left: 5px;
+    }
+
+        #menu_insht_lateral a:hover {
+            background: url(../img/menu_select.gif) center no-repeat;
+            background-position: 0px 0px;
+            color: #7E9491;
+        }
+
+        #menu_insht_lateral a.selected {
+            background: url(../img/menu_select.gif) center no-repeat;
+            background-position: 0px 0px;
+            color: #7E9491;
+        }
+
+
+/*********************/
+/*Menu superior Sergi*/
+#cabecera {
+}
+
+#menu_superior_clasic {
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font: bold 11px Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+    #menu_superior_clasic a:link {
+        color: white;
+        background-color: #FF7F00;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 6px 6px 6px 6px;
+    }
+
+    #menu_superior_clasic a:visited {
+        color: white;
+        background-color: #FF7F00;
+    }
+
+    #menu_superior_clasic a:hover {
+        background-color: #041B84;
+    }
+
+
+
+
+
+
+    #menu_superior_clasic a.activo,
+    #menu_superior_clasic a.activo:hover {
+        font-weight: bold;
+        background-color: #041B84;
+    }
+
+/*fi Menu superior Sergi*/
+/************************/
+
+
+
+
+#etiqueta_resultados {
+    background: #EEE;
+    margin-top: 0px;
+    text-align: justify;
+    width: 750px;
+    float: right;
+}
+
+    #etiqueta_resultados .datos {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #etiqueta_resultados h2 {
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+        background-color: #7E9491;
+        color: white;
+        font-size: large;
+        margin-bottom: 5px;
+        line-height: normal;
+        margin-top: 0px;
+    }
+
+    #etiqueta_resultados h3 {
+        color: #333;
+        font-weight: bold;
+        padding-bottom: 2px;
+        border-bottom: dotted 1px #999;
+        font-size: large;
+        margin-bottom: 5px;
+        line-height: normal;
+    }
+
+    #etiqueta_resultados h4 {
+        color: #666;
+        font-size: medium;
+        border-bottom: dotted 1px #999;
+        padding-bottom: 2px;
+        margin-bottom: 5px;
+        line-height: normal;
+    }
+
+    #etiqueta_resultados img {
+        background-color: white;
+        border: solid #666 1px;
+        padding: 5px;
+        width: 80px;
+        margin: 5px 5px 0px 0px;
+    }
+
+    #etiqueta_resultados p {
+        margin-top: 0px;
+        margin-bottom: 8px;
+        margin-left: 15px;
+    }
+
+    #etiqueta_resultados blockquote {
+        margin-left: 0px;
+    }
+
+
+/************/
+/*   Pie    */
+#pie_pagina {
+    /*
+	background-color:#7E9491;
+	color:white;
+	*/
+    margin-left: 210px;
+    width: 750px;
+    height: 35px;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    clear: both;
+}
+
+    #pie_pagina p {
+        font-size: 10px;
+        padding: 50px 5px 70px 5px;
+        margin: 0;
+        color: #333;
+    }
+
+
+/*   Fi Pie  */
+/************/
+
+
+
+/**************************************/
+/****** Formulario Registro ***********/
+.Formulario {
+    background: #F5F8FA;
+    border: solid;
+    border-width: 1px;
+    border-color: #D7E8F0;
+    padding: 15px;
+    width: 80%;
+    text-align: justify;
+}
+
+    .Formulario input {
+        border: solid;
+        border-width: 1px;
+        border-color: #ccc;
+    }
+
+    .Formulario etiqueta {
+        padding-top: 5px;
+    }
+
+    .Formulario input.boton {
+        font-size: 12px;
+        font-family: Verdana;
+        height: 25px;
+        background-color: #779999;
+        background-image: url(../img/fondo_boton.html);
+        border-style: solid;
+        border-color: #DDDDDD;
+        border-width: 1px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .Formulario #nombre {
+        width: 300px;
+    }
+
+    .Formulario #email {
+        width: 300px;
+    }
+
+    .Formulario #password {
+        width: 100px;
+    }
+
+    .Formulario #password_redundante {
+        width: 100px;
+    }
+
+.mensaje_campo_con_errores {
+    font-size: 9px;
+    color: #ff7c06;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.asterisco {
+    color: #FF0000;
+    font-weight: bold;
+}
+/****** FI Formulario Registro ********/
+/**************************************/
+
+
+
+/********************************/
+/****** Caja Login **************/
+#titulo_acceso {
+    font-size: 14px;
+    color: #06F;
+    text-align: center;
+}
+
+#caja_login {
+    background-color: #f0f0f0;
+    font-size: 12px;
+    width: 400px;
+}
+
+#mensaje_error_login {
+    text-align: center;
+    color: #F00;
+}
+
+#caja_login_flotante {
+    position: fixed;
+    margin-top: 20px;
+    right: 10px;
+    white-space: nowrap;
+    text-align: right;
+}
+/****** FI Caja Login ***********/
+/********************************/
+
+/***********************************************************/
+/****** Div flotante recordatorio de registro **************/
+#fade { /*--Transparent background layer--*/
+    display: none; /*--hidden by default--*/
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .80;
+    z-index: 9999;
+}
+
+.popup_block {
+    display: none; /*--hidden by default--*/
+    background: #fff;
+    padding: 20px;
+    border: 20px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    /*--CSS3 Box Shadows--*/
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+    /*--CSS3 Rounded Corners--*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+    .popup_block h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .popup_block .nivel {
+        font-weight: bold;
+    }
+
+img.btn_close {
+    float: right;
+    margin: -55px -55px 0 0;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+    position: absolute;
+}
+
+*html .popup_block {
+    position: absolute;
+}
+/****** Fin Div flotante recordatorio de registro **********/
+/***********************************************************/
+
+.selector_idioma {
+    display: none;
+}
+
+.separador {
+    margin-top: 30px;
+}
+
+
+div.info_usuario_lateral {
+    margin-left: 5px;
+    padding: 7px 10px;
+    height: 96px;
+    background: url(../img/menu-login.gif) no-repeat 0 0;
+    color: white;
+}
+
+.fomulario_login_lateral {
+    margin: 0;
+}
+
+    .fomulario_login_lateral div {
+        margin-bottom: 5px;
+    }
+
+    .fomulario_login_lateral input {
+        width: 130px;
+        border: none;
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .fomulario_login_lateral label {
+        display: inline-block;
+        width: 50px;
+        color: #333;
+    }
+
+#menu_insht_lateral a.link_menu {
+    background: none;
+    margin: 0;
+    margin-top: 3px;
+    padding: 0px;
+    height: auto;
+    color: white;
+    text-decoration: underline;
+    text-align: left;
+    font-size: 12px;
+    text-align: center;
+}
+
+    #menu_insht_lateral a.link_menu:hover {
+        color: #333;
+    }
+
+.info_usuario_lateral .titulo {
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted;
+}
+
+.info_usuario_lateral div.info {
+    margin: 5px 0;
+}
+
+.btn_ver_etiqueta {
+    background-color: #BDBDBD;
+    margin-right: 10px;
+}

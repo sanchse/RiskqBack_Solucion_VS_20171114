@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="ESRIAQWeb.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <link href="css/estilos01.css" rel="stylesheet" />
+    <link href="css/formulario01.css" rel="stylesheet" />
+    <%--<link href="css/maestra.css" rel="stylesheet" />--%>
+    
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <%--<script type="text/javascript" src="js/maestra.js"></script>--%>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+     
+     <!-- Elementos ocultos disponibles en todas paginas que hereden de esta Master page -->
+     <asp:HiddenField ID="ID_Usuario" Value="" runat="server" />
+     <asp:HiddenField ID="RQBack_URL" runat="server"/>
+     <!-- -->
+
+    <div id="container_pagina">
+
+    <div id="cabecera">
+
+                <table id="menu_insht_superior" border:"0"  cellpadding:"0" cellspacing:"0"  width:"972">
+                   <tr>
+                       <td id="mis11"> 
+                           <a href="www.mtin.es/index.html">
+                                    <img  src="../img/logo_mtin.gif" alt="Logo" border=0 />
+                           </a>
+                       </td>
+                       <td id="mis12">
+                            <a href="www.insht.es/index.html">
+                                <img  src="../img/logo_insht.gif" alt="Logo" border=0 />
+                            </a>
+                       </td>
+                   </tr>
+		           <tr>
+                      <td id="mis2" colspan="2">
+                          <table width: "972" border="0" id="navegador_insht">
+                                <tr>
+                                    <td id="mis21" ><img  src="../img/ico_calc.gif" alt="Logo" border=0 /></td>
+                                    <td id="mis22" ><a class="Link_Frame_Superior_Institut" href="../../../calculadores.insht.es_86/index.html" >Calculadores INSHT</a></td>
+                                    
+                                    <td id="mis23" ><img  src="../img/ico_home.gif" alt="Logo" border=0 /></td>
+                                    <td class: "Link_Frame_Superior_Institut">> <a class="Link_Frame_Superior_Institut" href="PaginaIntroduccion.aspx">Exposición a agentes químicos. Evaluación cualitativa del riesgo por inhalación de agentes químicos.</a></td>
+                              
+                                    <td id="mis25" ><img  src="../img/ico_volver.gif" alt="Logo" border=0 /></td>
+                                    <td id="mis26" ><a class="Link_Frame_Superior_Institut" href="../../../calculadores.insht.es_86/index.html">Volver a calculadores</a></td>
+                                </tr>
+                            </table>
+                      </td>
+                   </tr>
+
+                </table>
+
+                   		
+                <div id="titol_aplicacio">
+                <div style="margin-top:3px; margin-bottom:3px;">Exposición a agentes químicos. Evaluación cualitativa del riesgo por inhalacion de agentes químicos.</div>
+                </div>
+       
+            
+       </div>
+
+    <div id="cuerpo_pagina">
+                <div id="menu_insht_lateral">
+                	<a id="ml01" href="PaginaIntroduccion.aspx" class="selected">Introducción</a> 
+                    <a id="ml02" href="PaginaMisOperaciones.aspx"> Entrada de datos: Operaciones</a> 
+                    <%--<a id="ml03" target="_blank" href="PaginaRecursosAdicionales.aspx"  >Recursos adicionales</a>--%>
+                    <a id="ml03" href="PaginaRecursosAdicionales.aspx"  >Recursos adicionales</a>
+                   <br />
+                    <a id="ml04" href="../usuarios/login8180.html?aplicacion=CB"  >Acceso con Mi identificador</a> 
+				    
+                    <div class="info_usuario_lateral">
+                        <asp:Panel ID="panelNologado" runat="server">
+                            <div class="titulo">Acceso con Mi identificador</div>
+                            <div style="float:left;"><asp:Label ID="Label1" runat="server" Text="Identificador"></asp:Label></div>
+                            <div style="float: right; "> <asp:TextBox ID="Identificador" runat="server" Width="100"></asp:TextBox></div>
+                            <br/>
+                            <div style="float:left;"><asp:Label ID="Label2" runat="server" Text="Clave"></asp:Label></div>
+                            <div style="float: right; "> <asp:TextBox runat="server" ID="Clave" Width="100" ></asp:TextBox></div>
+                            <br/>      
+                            <br/>      
+                            <div align="center">             
+                                <asp:LinkButton runat="server" ID="accederLink" CssClass="link_menu" OnClick="Autentica_Click">Acceder ></asp:LinkButton>
+                            </div>
+                            <br/>
+                            <asp:Label ID="errorlabel" runat="server" Text="" ForeColor="red" Visible="False"></asp:Label>
+                            <br/>
+                        </asp:Panel>
+                        <asp:Panel ID="panelLogado" runat="server">
+                            <div class="titulo">Sesión iniciada</div>
+                            <div class="info"><span style="color:#333">Identificador: </span><%=Session["AUTH_Email"]%></div>
+                            <div class="info"><span style="color:#333">Clave: </span><%=Session["AUTH_Password"]%></div>
+                            <a href="PaginaDesconectar.aspx" class="link_menu" style="margin-top:10px;">Desconectar ></a>  
+                        </asp:Panel>
+                        
+                    </div>                                             
+                </div> 
+          <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+         </div>
+        
+           
+    
+	</div>
+
+	
+  
+    <div id="pie_pagina" >
+	<p>
+    © INSHT (Instituto Nacional de Seguridad e Higiene en el Trabajo) | <a  style="color:#7E9491;" target="_blank" href='../../../www.insht.es/portal/site/Insht/menuitem.1f1a3bc79ab34c578c2e8884060961ca/index629b.html?vgnextoid=42387639e8b14110VgnVCM100000dc0ca8c0RCRD&amp;vgnextchannel=25d44a7f8a651110VgnVCM100000dc0ca8c0RCRD'>Aviso legal</a>
+	</p>
+    </div>
+
+</div>
+    
+    
+    
+    
+    
+    <
+    
+    </form>
+</body>
+</html>
+

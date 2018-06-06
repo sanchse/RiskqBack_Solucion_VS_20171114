@@ -1,0 +1,984 @@
+﻿
+/*@charset "utf-8";*/
+
+/* Colores de las cajas */
+#caja_resultado_peligro {
+    background-color: limegreen;
+}
+
+#caja_resultado_cantidad {
+    background-color: limegreen;
+}
+
+#caja_resultado_frecuencia {
+    background-color: limegreen;
+}
+
+#caja_resultado_exposicion {
+    background-color: khaki;
+}
+
+#caja_resultado_riesgo {
+    background-color: darkorange;
+}
+
+
+#caja_resultado_volatilidad {
+    background-color: pink;
+}
+
+#caja_resultado_procedimiento_trabajo {
+    background-color: lightgreen;
+}
+
+#caja_resultado_protecciones_colectivas {
+    background-color: limegreen;
+}
+
+#caja_resultado_VLA {
+    background-color: darkorange;
+}
+
+.franja_riesgo_potencial {
+    width: 729px;
+    margin: 0px 0px 0px 0px;
+    /*border: 1px solid black;*/
+}
+
+#riesgo_potencial_franja01 {
+    height: 5px;
+}
+
+#riesgo_potencial_franja02 {
+    height: 65px;
+}
+
+#riesgo_potencial_franja03 {
+    height: 70px;
+    /*background-color: red;*/
+}
+
+#riesgo_potencial_franja04 {
+    height: 72px;
+}
+
+#riesgo_potencial_franja05 {
+    height: 25px;
+    /*background-color: red;*/
+}
+
+#riesgo_potencial_franja06 {
+    height: 98px;
+}
+
+
+#riesgo_potencial_franja07 {
+    height: 78px;
+}
+
+
+/* Peligro */
+
+.caja_resultado_peligro {
+    border: 2px solid black;
+    width: 130px;
+    height: 70px;
+    margin-left: 40px;
+    padding-top: 3px;
+    float:left;
+}
+
+.titulo_resultado_peligro {
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.titulo_resultado_peligro > span {
+     display: inline-block;
+     vertical-align: middle;
+}
+
+.clase_resultado_peligro {
+    width: 110px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top:3px;
+}
+
+
+.clase_literal_resultado_peligro {
+    width: 90px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.clase_valor_resultado_peligro {
+    border: 2px solid black;
+    width: 40px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 65px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.clase_valor_resultado_peligro > span {
+        display: inline-block;
+        vertical-align:-3px; 
+}
+
+
+/* Fin peligro */
+
+/* cantidad */
+
+.caja_resultado_cantidad {
+    border: 2px solid black;
+    width: 130px;
+    height: 70px;
+    margin-left: 120px;
+    padding-top: 3px;
+    float: left;
+}
+
+.titulo_resultado_cantidad {
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .titulo_resultado_cantidad > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.clase_resultado_cantidad {
+    width: 110px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+.clase_literal_resultado_cantidad {
+    width: 90px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.clase_valor_resultado_cantidad {
+    border: 2px solid black;
+    width: 40px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 65px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .clase_valor_resultado_cantidad > span {
+        display: inline-block;
+        vertical-align: -3px;
+    }
+
+
+/* Fin cantidad */
+
+
+/* frecuencia */
+
+.caja_resultado_frecuencia {
+    border: 2px solid black;
+    width: 240px;
+    height: 70px;
+    margin-left: 45px;
+    padding-top: 3px;
+    float:left;
+   
+}
+
+.titulo_resultado_frecuencia {
+    width: 210px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .titulo_resultado_frecuencia > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.clase_resultado_frecuencia {
+    width: 110px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+.clase_literal_resultado_frecuencia {
+    width: 90px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.clase_valor_resultado_frecuencia {
+    border: 2px solid black;
+    width: 40px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 175px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .clase_valor_resultado_frecuencia > span {
+        display: inline-block;
+        vertical-align: -3px;
+    }
+
+
+/* Fin frecuencia */
+
+/*fin canvas franja 04*/
+
+
+/* canvas franja 04 */
+
+.franja04_canvas {
+    /*border: 1px solid black;*/
+    width: 345px;
+    height: 70px;
+    margin-left: 0px;
+    float: left;
+    
+    /*background-color: red;*/
+}
+
+/*fin canvas franja 04*/
+
+/* exposicion */
+
+.caja_resultado_exposicion {
+    border: 2px solid black;
+    width: 210px;
+    height: 70px;
+    margin-left: 0px;
+    float: left;
+}
+
+.titulo_resultado_exposicion {
+    width: 180px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .titulo_resultado_exposicion > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+.clase_resultado_exposicion {
+    width: 110px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+.clase_literal_resultado_exposicion {
+    width: 90px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.clase_valor_resultado_exposicion {
+    border: 2px solid black;
+    width: 40px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 145px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .clase_valor_resultado_exposicion > span {
+        display: inline-block;
+        vertical-align: -3px;
+    }
+
+
+/* Fin exposicion */
+
+
+/* riesgo */
+
+.caja_resultado_riesgo {
+    border: 2px solid black;
+    width: 210px;
+    height: 96px;
+    margin-left: 135px;
+    float: left;
+}
+
+.titulo_resultado_riesgo {
+    width: 180px;
+    height: 30px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .titulo_resultado_riesgo > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+
+
+.clase_resultado_riesgo {
+ 
+   width: 110px;
+   height: 30px;
+   margin-top: 1px;
+   margin-left: 10px;
+   padding-top: 1px;
+}
+
+
+.clase_literal_resultado_riesgo {
+    width: 90px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.clase_valor_resultado_riesgo {
+    border: 2px solid black;
+    width: 40px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 145px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.clase_valor_resultado_riesgo > span {
+        display: inline-block;
+        vertical-align: -3px;
+}
+
+
+
+.puntuacion_resultado_riesgo {
+    width: 110px;
+    height: 30px;
+    margin-top: 1px;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+.puntuacion_literal_resultado_riesgo {
+    width: 90px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.puntuacion_valor_resultado_riesgo {
+    border: 2px solid black;
+    width: 80px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left: 105px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+    .puntuacion_valor_resultado_riesgo > span {
+        display: inline-block;
+        vertical-align: -3px;
+    }
+
+/* Fin riesgo */
+
+.marco_resultado_parcial {
+    width: 729px;
+    height: 350px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 92px;
+}
+
+.caja_resultado_parcial {
+    border: 2px solid black;
+    width: 330px;
+    height: 168px;
+    margin-left: 176px;
+    padding-top: 15px;  
+}
+
+.caja_resultado_parcial_vla {
+    border: 2px solid black;
+    width: 330px;
+    height: 168px;
+    margin-left: 176px;
+    padding-top: 30px;
+}
+
+.titulo_resultado_parcial {
+    width: 320px;
+    height: 30px;
+    margin-left: 5px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.titulo_resultado_parcial > span {
+    display: inline-block;
+    vertical-align: middle;
+ }
+
+.titulo_resultado_parcial_vla {
+    width: 320px;
+    height: 30px;
+    margin-left: 5px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.titulo_resultado_parcial_vla > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.clase_resultado_parcial {
+    width: 190px;
+    height: 35px;
+    margin-top: 40px;
+    margin-left: 65px;
+}
+
+.clase_literal_resultado_parcial {
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.clase_valor_resultado_parcial {
+    border: 2px solid black;
+    width: 40px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 150px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.clase_valor_resultado_parcial > span {
+    display: inline-block;
+    vertical-align: -10px;
+}
+
+.puntuacion_resultado_parcial {
+    width: 190px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.puntuacion_resultado_parcial_vla {
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.puntuacion_literal_resultado_parcial {
+    width: 115px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 0px;
+    float: left;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.puntuacion_valor_resultado_parcial {
+    border: 2px solid black;
+    width: 70px;
+    height: 30px;
+    margin-top: 0px;
+    margin-left: 120px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.puntuacion_valor_resultado_parcial > span {
+    display: inline-block;
+    vertical-align: -10px;
+}
+
+.puntuacion_valor_resultado_parcial_vla {
+    border: 2px solid black;
+    width: 70px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 60px;
+    padding-right: 5px;
+    background-color: white;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+    .puntuacion_valor_resultado_parcial_vla > span {
+        display: inline-block;
+        vertical-align: -10px;
+    }
+
+    /*Resultado global*/
+
+.franja_resultados {
+    width: 729px;
+    margin: 0px 0px 0px 0px;
+    border: 0px solid black;*/
+}
+
+#id_res_franja01 {
+    height: 5px;
+}
+
+#id_res_franja02 {
+    height: 60px;
+}
+
+#id_res_franja03 {
+    height: 48px;
+}
+
+#id_res_franja04 {
+    height: 60px;
+}
+
+#id_res_franja05 {
+    height: 48px;
+}
+
+#id_res_franja06 {
+    height: 72px;
+}
+
+#id_res_franja07 {
+    height: 46px;
+}
+
+#id_res_franja08 {
+    height: 50px;
+}
+
+.caja_res_1 {
+    border: 2px solid black;
+    width: 115px;
+    height: 60px;
+    background-color: limegreen;
+    float: left;
+    margin-right: 10px;
+}
+
+.caja_res_2 {
+    border: 2px solid black;
+    width: 115px;
+    height: 60px;
+    float: right;
+    margin-right: 410px;
+}
+
+#lineasrfranja04id_caja_res_peligro {
+    float:left;
+}*
+
+#id_caja_res_peligro {
+      margin-left: 15px;
+}
+
+.clase_res_1 {
+    width: 120px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.clase_literal_res_1 {
+    width: 50px;
+    height: 15px;
+    padding-top: 10px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    float: left;
+}
+
+
+#id_caja_res_exposicion {
+    background-color: khaki;
+    
+}
+
+
+.caja_res {
+    border: 2px solid black;
+    height: 70px;   
+}
+
+
+
+.titulo_res {
+    width: 115px;
+    height: 15px;
+    text-align: center;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.titulo_res > span {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+
+.clase_res {
+    width: 120px;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+.clase_literal_res {
+    width: 70px;
+    height: 15px;
+    padding-top: 10px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    float:left;
+}
+
+
+.clase_valor_res {
+    border: 1px solid pink;
+    width: 30px;
+    height: 20px;
+    margin-left: 78px;
+    padding-top: 0px;
+    padding-right: 2px;
+    background-color: lemonchiffon;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+    .clase_valor_res > span {
+        display: inline-block;
+        vertical-align: -5px;
+    }
+
+.puntuacion_res {
+    width: 120px;
+    height: 20px;
+    margin-top:4px;
+    margin-left: 2px;
+}
+
+
+.puntuacion_literal_res {
+    width: 70px;
+    height: 15px;
+    padding-top: 8px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    float: left;
+}
+
+.puntuacion_valor_res {
+    border: 1px solid pink;
+    width: 45px;
+    height: 20px;
+    margin-left: 65px;
+    /*padding-right: 2px;*/
+    background-color: lemonchiffon;
+    text-align: right;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+    .puntuacion_valor_res > span {
+        display: inline-block;
+        vertical-align: -5px;
+    }
+
+
+
+#id_caja_res_riesgo {
+    background-color: darkorange;
+    width: 115px;
+    margin-left: 70px;
+    float: left;
+}
+
+#id_caja_res_volatilidad {
+    background-color: pink;
+    width: 115px;
+    margin-left: 10px;
+    float:left;
+}
+
+
+#id_caja_res_procedimiento {
+    background-color: lightgreen;
+    width: 115px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+#id_caja_res_proteccion {
+    background-color: limegreen;
+    width: 140px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+#id_caja_res_fcvla {
+    background-color: darkorange;
+    width: 105px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+#id_titulo_res_proteccion {
+    width: 140px;
+}
+
+
+#id_clase_valor_res_proteccion {
+    margin-left: 102px;
+}
+
+#id_puntuacion_valor_res_proteccion {
+    margin-left: 90px;
+}
+
+#id_titulo_res_fcvla {
+    width: 105px;
+}
+
+#id_titulo_res_fcvla {
+    width: 105px;
+}
+
+
+#id_puntuacion_res_fcvla {
+    margin-top: 30px;
+}
+
+
+#id_puntuacion_valor_res_fcvla {
+    width: 35px;
+}
+
+.puntuacion_literal_res2 {
+    width: 70px;
+    height: 15px;
+    padding-top: 0px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    float: left;
+}
+
+.caja_res_resultado {
+    border: 2px solid blue;
+    width: 460px;
+    height: 40px;
+    background-color: white;
+    margin-left: 185px;
+}
+
+.titulo_res_resultado {
+    width: 310px;
+    height: 25px;
+    margin-top:10px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 35px;
+    color: blue;
+    float: left;
+}
+
+.puntuacion_valor_res_resultado {
+    border: 2px solid pink;
+    width: 110px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 335px;
+    background-color: lemonchiffon;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 2px;
+    color: blue;
+}
+
+#notasa {
+    width: 700px;
+    height: 220px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-size: 9px;
+    /*background-color: gray;*/
+}

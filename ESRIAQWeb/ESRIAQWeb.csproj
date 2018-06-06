@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBF9410B-667D-4A3B-B85E-9DDCDE299063}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESRIAQWeb</RootNamespace>
+    <AssemblyName>ESRIAQWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\cuadroresultado.css" />
+    <Content Include="css\imprimir.css" />
+    <Content Include="css\MiPopup.css" />
+    <Content Include="img\close_pop.png" />
+    <Content Include="img\EsquemaCalculo.png" />
+    <Content Include="img\EsquemaCalculo03.png" />
+    <Content Include="img\Logotipo completo INSSBT.JPG" />
+    <Content Include="img\logo_insht_01.gif" />
+    <Content Include="img\sort_asc.png" />
+    <Content Include="img\sort_asc_disabled.png" />
+    <Content Include="img\sort_both.png" />
+    <Content Include="img\sort_desc.png" />
+    <Content Include="img\sort_desc_disabled.png" />
+    <Content Include="img\Trabajo a la intemperie.jpg" />
+    <Content Include="img\Trabajo en espacio con aberturas limitadas.jpg" />
+    <Content Include="js\deleteoperacion.js" />
+    <Content Include="js\lineasresultados.js" />
+    <Content Include="js\PopUp.js" />
+    <Content Include="js\popup.old.js" />
+    <Content Include="js\usuarioaux_V02.js" />
+    <Content Include="PaginaDeleteOperacion.aspx" />
+    <Content Include="PaginaMisOperaciones.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="PaginaMiID.aspx" />
+    <Content Include="PaginaPrincipal.Master" />
+    <Content Include="PaginaMaestra.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\estilos.css" />
+    <Content Include="css\estilos01.css" />
+    <Content Include="css\formulario.css" />
+    <Content Include="css\formulario01.css" />
+    <Content Include="css\jquery.dataTables.min.css" />
+    <Content Include="css\maestra.css" />
+    <Content Include="css\operacion.css" />
+    <Content Include="css\tooltip.css" />
+    <Content Include="img\abierto.jpg" />
+    <Content Include="img\add.png" />
+    <Content Include="img\aspiración integrada en herramienta.jpg" />
+    <Content Include="img\ausencia de ventilación.jpg" />
+    <Content Include="img\bottom.png" />
+    <Content Include="img\btn_left.png" />
+    <Content Include="img\btn_right.png" />
+    <Content Include="img\btn_stretch.png" />
+    <Content Include="img\button_ok.png" />
+    <Content Include="img\cabina de pequeñas dimensiones.jpg" />
+    <Content Include="img\cabina horizontal.jpg" />
+    <Content Include="img\cabina vertical.jpg" />
+    <Content Include="img\campana superior.jpg" />
+    <Content Include="img\captación envolvente.jpg" />
+    <Content Include="img\cerrado abierto.jpg" />
+    <Content Include="img\cerrado.jpg" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\descargar.png" />
+    <Content Include="img\dispersivo.jpg" />
+    <Content Include="img\fondo_boton.html" />
+    <Content Include="img\ico_calc.gif" />
+    <Content Include="img\ico_home.gif" />
+    <Content Include="img\ico_volver.gif" />
+    <Content Include="img\Imagen trabajo en espacio con aperturas limitadas.png" />
+    <Content Include="img\info.png" />
+    <Content Include="img\logo_insht.gif" />
+    <Content Include="img\logo_mtin.gif" />
+    <Content Include="img\menu-login.gif" />
+    <Content Include="img\menu.gif" />
+    <Content Include="img\menu_select.gif" />
+    <Content Include="img\mesa con aspiración.jpg" />
+    <Content Include="img\pencil.png" />
+    <Content Include="img\rendija de aspiración.jpg" />
+    <Content Include="img\shadow.gif" />
+    <Content Include="img\top.png" />
+    <Content Include="img\trabajador alejado.jpg" />
+    <Content Include="img\ventilación general.jpg" />
+    <Content Include="js\CuadroResultado.js" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\jquery.dataTables.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.tooltip.js" />
+    <Content Include="js\maestra.js" />
+    <Content Include="js\MisOperaciones.js" />
+    <Content Include="js\operacion.js" />
+    <Content Include="js\recursosadicionales.js" />
+    <Content Include="js\validacion_formularios-04.js" />
+    <Content Include="js\view.js" />
+    <Content Include="PaginaDesconectar.aspx" />
+    <Content Include="PaginaIntroduccion.aspx" />
+    <Content Include="PaginaMisOperaciones2.aspx" />
+    <Content Include="PaginaOperacion.aspx" />
+    <Content Include="PaginaRecursosAdicionales.aspx" />
+    <Content Include="PaginaRegistrarUsuario.aspx" />
+    <Content Include="PaginaUsuarioAux.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PaginaMisOperaciones.aspx.cs">
+      <DependentUpon>PaginaMisOperaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMisOperaciones.aspx.designer.cs">
+      <DependentUpon>PaginaMisOperaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaDesconectar.aspx.cs">
+      <DependentUpon>PaginaDesconectar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaDesconectar.aspx.designer.cs">
+      <DependentUpon>PaginaDesconectar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaIntroduccion.aspx.cs">
+      <DependentUpon>PaginaIntroduccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaIntroduccion.aspx.designer.cs">
+      <DependentUpon>PaginaIntroduccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMaestra.Master.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMaestra.Master.designer.cs">
+      <DependentUpon>PaginaMaestra.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMiID.aspx.cs">
+      <DependentUpon>PaginaMiID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMiID.aspx.designer.cs">
+      <DependentUpon>PaginaMiID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaMisOperaciones2.aspx.cs">
+      <DependentUpon>PaginaMisOperaciones2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaMisOperaciones2.aspx.designer.cs">
+      <DependentUpon>PaginaMisOperaciones2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaOperacion.aspx.cs">
+      <DependentUpon>PaginaOperacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaOperacion.aspx.designer.cs">
+      <DependentUpon>PaginaOperacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaPrincipal.Master.cs">
+      <DependentUpon>PaginaPrincipal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaPrincipal.Master.designer.cs">
+      <DependentUpon>PaginaPrincipal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaRecursosAdicionales.aspx.cs">
+      <DependentUpon>PaginaRecursosAdicionales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaRecursosAdicionales.aspx.designer.cs">
+      <DependentUpon>PaginaRecursosAdicionales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaRegistrarUsuario.aspx.cs">
+      <DependentUpon>PaginaRegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaRegistrarUsuario.aspx.designer.cs">
+      <DependentUpon>PaginaRegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios\Autenticacion.cs" />
+    <Compile Include="Usuarios\Usuarios.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>34605</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34537/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

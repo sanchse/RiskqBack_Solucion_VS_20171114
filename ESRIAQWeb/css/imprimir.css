@@ -1,0 +1,114 @@
+﻿/*@charset "utf-8";*/
+#titol_aplicacio, #steps, #top, #bottom, #botones_cb, .botondelete, .botoneditar, .botoninfo, #menu_lateral, #menu_insht_lateral, #navegador_insht,
+#menu_superior_clasic, .grupo_botones, .poplight, .popup_block, #cuerpo, #ImprimirOperacion, #GrabarOperacion, #ImprimeOperacion, #GrabaOperacion, #criterioBusqueda, .prev, .next {
+    display: none;
+}
+
+#form_container {
+    background-color: #FFF;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+
+form {
+    margin: 60px 0px 0;
+    padding: 0 0 20px;
+}
+
+    form li {
+        padding-left: 0px;
+        display: block;
+        margin: 0;
+        position: relative;
+    }
+
+#resultados_cb {
+    margin-left: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#pie_pagina {
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#niveles_riesgo {
+    color: #666;
+    margin-top: 30px;
+    font-size: small;
+}
+
+/* Tabla de composición de agentes*/
+table.agentes {
+    background-color: #CCC;
+    margin-bottom: 15px;
+}
+
+    table.agentes thead th {
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    table.agentes tfoot th {
+        font-size: 12px;
+        font-weight: bold;
+        height: 20px;
+        text-align: center;
+    }
+
+    table.agentes td.selected {
+        background-color: #FF9;
+    }
+
+    table.agentes td.none {
+        background-color: white;
+    }
+
+    table.agentes td {
+        border-width: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-color: #999;
+        background-color: white;
+        text-align: center;
+    }
+
+        table.agentes td:first-child {
+            text-align: left;
+        }
+
+    table.agentes a {
+        text-decoration: none;
+    }
+
+#container_pagina, #contenido_general {
+    width: 100%;
+}
+
+#cuerpo_pagina {
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+#etiqueta_resultados {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+    #etiqueta_resultados h2 {
+        background-color: #fff;
+        color: black;
+        text-align: center;
+    }
+
+.tabla_busqueda {
+    width: 100%;
+}
